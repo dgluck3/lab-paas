@@ -1,5 +1,7 @@
 import os
-from flask import Flask
+from importlib import import_module
+
+Flask = import_module("flask").Flask
 
 app = Flask(__name__)
 
